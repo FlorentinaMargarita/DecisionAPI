@@ -7,5 +7,10 @@ def hello_world():
     out = render_template("start.html", name="ich bin der grosse weisse elefant. denk an mich.", items=items)
     return out
     
+@app.route('/flo')
+def flo():
+    out = render_template("start.html", name="Ihre Hoheit")
+    return out
+    
 if __name__ == "__main__":
     app.run(debug=True)
