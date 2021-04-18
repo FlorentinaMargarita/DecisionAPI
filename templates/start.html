@@ -1,18 +1,9 @@
-<!DOCTYPE html>
-
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <title>Start.html</title>
-</head>
-
-<body>
+{% extends "main.html" %}
+{% block content %}
     <h1>{{name}}</h1>
 
     {% for item in items %}
     <h3>{{item}}</h3>
-    {%endfor%}
-</body>
+    {% endfor %}
 
-</html>
+{% endblock %}

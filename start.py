@@ -9,7 +9,7 @@ def hello_world():
     
 @app.route('/flo')
 def flo():
-    out = render_template("start.html", name="Ihre Hoheit")
+    out = render_template("flo.html", name="Flo")
     return out
     
 if __name__ == "__main__":

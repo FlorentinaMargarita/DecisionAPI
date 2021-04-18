@@ -1,14 +1,5 @@
-<!DOCTYPE html>
+{% extends "main.html" %}
 
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <title>Start.html</title>
-</head>
-
-<body>
-    <h1>{{name}}</h1>
-</body>
-
-</html>
+{% block content %}
+<h1>Der Name ist: {{name}} </h1>
+{% endblock %}
