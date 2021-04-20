@@ -10,7 +10,8 @@ def hello_world():
 @app.route('/flo')
 def flo():
     name = request.args.get("name")
-    out = render_template("flo.html", name=name)
+    age=request.args.get("age")
+    out = render_template("flo.html", name=name, age=age)
     return out
     
 if __name__ == "__main__":
