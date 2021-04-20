@@ -7,16 +7,19 @@
     <title>Main.html</title>
     <link rel='stylesheet' href="/static/lib/normalize.css"/>
     <link rel='stylesheet' href="/static/lib/skeleton.css"/>
+    <link rel='stylesheet'  href="/static/styles.css"/>
 
 </head>
 
 <body>
     <div class="container">
-  <ul>
-      <li><a href="/">Home</a></li>
-      <li> <a href="/flo"> Test </a> </li>
-
+  <ul class="navigation">
+      <li class="navigationItem">
+          <a class="navigationItem" href="/">Home</a>
+    </li>
+      <li class="navigationItem"> <a href="/flo"> Test </a> </li>
   </ul>
+  <div style="clear: both">&nbsp;</div>
     {%block content%} {%endblock%}
 </div>
 </body>

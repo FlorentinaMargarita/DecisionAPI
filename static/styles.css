@@ -1,0 +1,24 @@
+.container{
+    background-color: rebeccapurple;
+
+}
+
+.navigation{
+    display: flex;
+    /* list-style-type: none; */
+    color: 'red';
+    flex-direction: row;
+    float: right;
+    list-style-type: square;
+    background-color: rebeccapurple;
+}
+
+.navigationItem{
+    /* flex-direction: row; */
+    float: right;
+    padding-left: 10vw;
+    padding-top: 100vw;
+    color: 'red';
+
+}
+
