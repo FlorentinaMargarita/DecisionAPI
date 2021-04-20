@@ -4,4 +4,10 @@
 {% if name != None %}
 <h1>Der Name ist: {{name}} </h1>
 {%endif%}
+<!-- Formular wird via Get abgeschickt -->
+<form method="get">
+    <input type="text" name='name'/>
+    <input type="submit" name='Send Form' />
+
+</form>
 {% endblock %}
