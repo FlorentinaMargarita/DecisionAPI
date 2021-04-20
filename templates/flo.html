@@ -1,5 +1,7 @@
 {% extends "main.html" %}
 
 {% block content %}
+{% if name != None %}
 <h1>Der Name ist: {{name}} </h1>
+{%endif%}
 {% endblock %}
