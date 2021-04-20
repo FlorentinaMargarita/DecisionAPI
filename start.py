@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 app = Flask(__name__)
 
 @app.route('/')
@@ -9,7 +9,8 @@ def hello_world():
     
 @app.route('/flo')
 def flo():
-    out = render_template("flo.html", name="Flo")
+    name = request.args.get("name")
+    out = render_template("flo.html", name=name)
     return out
     
 if __name__ == "__main__":
